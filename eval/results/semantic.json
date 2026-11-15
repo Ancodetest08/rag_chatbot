@@ -1,0 +1,1053 @@
+{
+  "meta": {
+    "chunker": "semantic",
+    "embedding_model": "text-embedding-3-small",
+    "llm_model": "gpt-4.1-mini",
+    "top_k": 5,
+    "num_cases": 100
+  },
+  "summary": {
+    "answerable": {
+      "passed": 64,
+      "total": 77
+    },
+    "unanswerable": {
+      "passed": 16,
+      "total": 23
+    },
+    "overall": {
+      "passed": 80,
+      "total": 100
+    }
+  },
+  "results": [
+    {
+      "question": "Trong P01, mạng cảm biến Mây Lam có bao nhiêu nút và được chia thành các vùng nào?",
+      "answerable": true,
+      "must_contain": [
+        "24",
+        "G01",
+        "G04"
+      ],
+      "pass": false,
+      "answer": "Trong P01, mạng cảm biến Mây Lam có 24 nút ML01-ML24, phân bố đều sáu nút cho mỗi vùng, tức có 4 vùng (mỗi vùng 6 nút).\n\nCăn cứ: (paper_01.pdf, page 1)",
+      "reason": "missing keywords: ['G01', 'G04']"
+    },
+    {
+      "question": "Lịch đo lý thuyết của bộ dữ liệu LYR-MAYLAM-56D có bao nhiêu bản ghi?",
+      "answerable": true,
+      "must_contain": [
+        "193.536"
+      ],
+      "pass": true,
+      "answer": "Lịch đo lý thuyết của bộ dữ liệu LYR-MAYLAM-56D có 193.536 bản ghi (paper_01.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "Sau khi lọc, P01 còn bao nhiêu bản ghi hợp lệ và tỷ lệ hợp lệ là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "184.246",
+        "95,20%"
+      ],
+      "pass": true,
+      "answer": "Sau khi lọc, P01 còn 184.246 bản ghi hợp lệ với tỷ lệ hợp lệ là 95,20% (paper_01.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "MAE nhiệt độ trong P01 giảm từ bao nhiêu xuống bao nhiêu trên tập kiểm thử 14 ngày?",
+      "answerable": true,
+      "must_contain": [
+        "0,78",
+        "0,42"
+      ],
+      "pass": true,
+      "answer": "MAE nhiệt độ trong P01 giảm từ 0,78 °C xuống 0,42 °C trên tập kiểm thử 14 ngày (paper_01.pdf, page 1; paper_01.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Phân vị thứ 90 của sai số tuyệt đối trong P01 thay đổi thế nào giữa đường cơ sở và kịch bản mới?",
+      "answerable": true,
+      "must_contain": [
+        "1,54",
+        "0,91"
+      ],
+      "pass": true,
+      "answer": "Phân vị thứ 90 (P90) của sai số tuyệt đối trong P01 giảm từ 1,54 °C (đường cơ sở) xuống còn 0,91 °C (kịch bản mới).\n\nCăn cứ: (paper_01.pdf, page 2)",
+      "reason": ""
+    },
+    {
+      "question": "Trong một ngày nắng giả định của P01, đỉnh nhiệt độ ở G01 cao hơn G02 bao nhiêu độ?",
+      "answerable": true,
+      "must_contain": [
+        "2,1"
+      ],
+      "pass": true,
+      "answer": "Trong một ngày nắng giả định của P01, mức đỉnh tại G01 cao hơn G02 là 2,1 °C (paper_01.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Lỗi kiểm tra được cài vào nút ML17 trong P01 là gì?",
+      "answerable": true,
+      "must_contain": [
+        "ML17",
+        "11",
+        "29,0"
+      ],
+      "pass": true,
+      "answer": "Lỗi kiểm tra được cài vào nút ML17 tại vùng G03 là 11 bản ghi liên tiếp có cùng giá trị 29,0 °C. Bộ lọc đánh dấu đoạn này là dữ liệu nghi vấn nhưng giữ bản gốc trong tệp nguồn để kiểm toán (paper_01.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Ở ví dụ ML03 lúc 13:20 ngày 39 của P01, nhiệt độ ghi nhận, nhiệt độ tham chiếu và nhiệt độ mô hình ước lượng là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "34,7",
+        "33,8",
+        "33,9"
+      ],
+      "pass": true,
+      "answer": "Ở ví dụ ML03 lúc 13:20 ngày 39 của P01, nhiệt độ ghi nhận là 34,7 °C, nhiệt độ tham chiếu là 33,8 °C và nhiệt độ mô hình ước lượng là 33,9 °C (paper_01.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Trong P02, bộ phát hiện bất thường phát ra bao nhiêu cảnh báo, bao nhiêu đúng và bao nhiêu sai?",
+      "answerable": true,
+      "must_contain": [
+        "27",
+        "23",
+        "4"
+      ],
+      "pass": true,
+      "answer": "Bộ phát hiện bất thường trong P02 phát ra tổng cộng 27 cảnh báo, trong đó có 23 cảnh báo đúng và 4 cảnh báo sai (paper_02.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Precision và recall của cảnh báo rò rỉ trong P02 là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "85,2%",
+        "92,0%"
+      ],
+      "pass": true,
+      "answer": "Precision của cảnh báo rò rỉ trong P02 là 85,2%, recall là 92,0% (paper_02.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Lượng nước cấp mỗi tuần trong P02 thay đổi thế nào giữa kịch bản đối chứng và kịch bản có điều tiết?",
+      "answerable": true,
+      "must_contain": [
+        "420",
+        "360",
+        "14,3%"
+      ],
+      "pass": true,
+      "answer": "Lượng nước cấp mỗi tuần trong P02 thay đổi từ 420 m³ trong kịch bản đối chứng xuống còn 360 m³ trong kịch bản có điều tiết và tái sử dụng, tức giảm 60 m³ nước cấp mỗi tuần (tương đương giảm khoảng 14,3%) (paper_02.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "Dòng tái sử dụng trong P02 đáp ứng bao nhiêu phần trăm nhu cầu nước không dùng để uống?",
+      "answerable": true,
+      "must_contain": [
+        "22%"
+      ],
+      "pass": false,
+      "answer": "Dòng tái sử dụng trong P02 đáp ứng 14,3% nhu cầu nước không dùng để uống, được so sánh giữa hai tuần giả định có cùng nhu cầu kỹ thuật (không phải tiết kiệm bình quân toàn bộ 90 ngày) (paper_02.pdf, page 2).",
+      "reason": "missing keywords: ['22%']"
+    },
+    {
+      "question": "Cảnh báo K-AL17 trong P02 xảy ra ở nhánh nào, phát lúc mấy giờ và chậm bao lâu so với lúc rò rỉ bắt đầu?",
+      "answerable": true,
+      "must_contain": [
+        "K-AL17",
+        "B4",
+        "02:30",
+        "15 phút"
+      ],
+      "pass": true,
+      "answer": "Cảnh báo K-AL17 trong P02 xảy ra ở nhánh B4, phát lúc 02:30 ngày 48, chậm 15 phút so với lúc rò rỉ bắt đầu lúc 02:15 (paper_02.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Hai sự cố rò rỉ không được phát hiện trong P02 xảy ra ở nhánh nào?",
+      "answerable": true,
+      "must_contain": [
+        "B6"
+      ],
+      "pass": false,
+      "answer": "I don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "Trong P03, lịch điều phối GridNest giảm đỉnh công suất mua từ lưới bao nhiêu phần trăm?",
+      "answerable": true,
+      "must_contain": [
+        "18,6%"
+      ],
+      "pass": true,
+      "answer": "Lịch điều phối GridNest giảm đỉnh công suất mua từ lưới 18,6% (paper_03.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Tỷ lệ điện mặt trời tự dùng trong P03 tăng từ bao nhiêu lên bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "76%",
+        "88%"
+      ],
+      "pass": true,
+      "answer": "Tỷ lệ điện mặt trời tự dùng trong P03 tăng từ 76% lên 88% (paper_03.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Tổn hao chu kỳ nạp-xả của pin trong P03 chiếm bao nhiêu phần trăm?",
+      "answerable": true,
+      "must_contain": [
+        "7,1%"
+      ],
+      "pass": true,
+      "answer": "Tổn hao chu kỳ nạp-xả của pin trong P03 chiếm 7,1% năng lượng đi qua pin (paper_03.pdf, page 1; paper_03.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Công suất đỉnh của mảng điện mặt trời và dung lượng danh định của pin GridNest là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "120 kWp",
+        "240 kWh"
+      ],
+      "pass": true,
+      "answer": "Công suất đỉnh của mảng điện mặt trời là 120 kWp và dung lượng danh định của pin là 240 kWh (paper_03.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Khoảng trạng thái sạc (SOC) cho phép của pin trong P03 là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "15",
+        "90"
+      ],
+      "pass": true,
+      "answer": "Khoảng trạng thái sạc (SOC) cho phép của pin trong P03 là từ 15% đến 90% (paper_03.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Trong ngày mô phỏng D117 của P03, công suất mua lưới đỉnh khi chưa điều phối và khi dùng GridNest là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "312",
+        "254"
+      ],
+      "pass": true,
+      "answer": "Trong ngày mô phỏng D117 của P03, công suất mua lưới đỉnh khi chưa điều phối đạt 312 kW lúc 18:00, còn khi dùng GridNest là 254 kW, tương ứng giảm 18,6% (paper_03.pdf, page 2, [P03-R2]).",
+      "reason": ""
+    },
+    {
+      "question": "Trong P04, MAE số người mỗi phòng của đường cơ sở và của phương pháp Lối Bạc là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "8,1",
+        "4,8"
+      ],
+      "pass": false,
+      "answer": "I don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "Cảnh báo đông trong P04 có precision bao nhiêu, với ngưỡng nào và tầm nhìn dự báo bao lâu?",
+      "answerable": true,
+      "must_contain": [
+        "82%",
+        "75%",
+        "20 phút"
+      ],
+      "pass": true,
+      "answer": "Cảnh báo đông trong P04 có precision là 82%, với ngưỡng dự báo vượt 75% sức chứa và tầm nhìn dự báo là 20 phút (paper_04.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Ở ví dụ phòng L07 của P04, mô hình dự đoán bao nhiêu người và đó là bao nhiêu phần trăm sức chứa?",
+      "answerable": true,
+      "must_contain": [
+        "33",
+        "82,5%"
+      ],
+      "pass": true,
+      "answer": "Ở ví dụ phòng L07 của P04, mô hình dự đoán 33 người vào lúc 14:20, tương đương 82,5% sức chứa (phòng có sức chứa 40 người) (paper_04.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Có bao nhiêu ô phòng-thời gian trong P04 trước khi áp dụng cờ vắng dữ liệu?",
+      "answerable": true,
+      "must_contain": [
+        "34.560"
+      ],
+      "pass": true,
+      "answer": "Có 34.560 ô phòng-thời gian trong P04 trước khi áp dụng cờ vắng dữ liệu (paper_04.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "Trường dữ liệu camera_frame trong P04 có tồn tại không?",
+      "answerable": true,
+      "must_contain": [
+        "camera_frame"
+      ],
+      "pass": true,
+      "answer": "Trường dữ liệu camera_frame trong P04 không tồn tại, vì theo mô tả trong phụ lục A của P04, trường này được ghi rõ là \"không có\" và \"Trường dữ liệu cố ý không tồn tại\" (paper_04.pdf, page 3). \n\nDo đó, camera_frame không phải là trường dữ liệu có trong bộ dữ liệu P04.\n\n(paper_04.pdf, page 3)",
+      "reason": ""
+    },
+    {
+      "question": "Trong P05, tỷ lệ lẫn tạp chất giảm từ bao nhiêu xuống bao nhiêu và đó là giảm bao nhiêu điểm phần trăm?",
+      "answerable": true,
+      "must_contain": [
+        "28%",
+        "16%",
+        "12 điểm"
+      ],
+      "pass": true,
+      "answer": "Tỷ lệ lẫn tạp chất trong P05 giảm từ 28% xuống 16%, tương ứng giảm 12 điểm phần trăm (file: paper_05.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Mức giảm tương đối của tỷ lệ lẫn tạp chất trong P05 là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "42,9%"
+      ],
+      "pass": true,
+      "answer": "Mức giảm tương đối của tỷ lệ lẫn tạp chất trong P05 là khoảng 42,9% (từ 28% xuống 16%) (paper_05.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Việc dự báo mức đầy thùng giúp giảm bao nhiêu phần trăm quãng đường thu gom hằng tuần trong P05?",
+      "answerable": true,
+      "must_contain": [
+        "14%"
+      ],
+      "pass": true,
+      "answer": "Việc dự báo mức đầy thùng giúp giảm 14% quãng đường thu gom trong tuần đại diện, với điều kiện cùng số điểm phải phục vụ (paper_05.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Tổng khối lượng vật liệu mô phỏng trong P05 là bao nhiêu và kéo dài bao lâu?",
+      "answerable": true,
+      "must_contain": [
+        "3.200",
+        "12 tuần"
+      ],
+      "pass": true,
+      "answer": "Tổng khối lượng vật liệu mô phỏng trong P05 là 3.200 kg, kéo dài trong 12 tuần (hai giai đoạn 6 tuần) (paper_05.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Trong ví dụ điểm W3 của P05, lịch điều chỉnh bỏ chuyến ở mức đầy dự báo nào và giữ chuyến ở mức nào?",
+      "answerable": true,
+      "must_contain": [
+        "34%",
+        "79%"
+      ],
+      "pass": true,
+      "answer": "Lịch điều chỉnh bỏ một chuyến khi mức đầy dự báo chỉ 34% và giữ chuyến kế tiếp khi lên 79% (paper_05.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "MAE dự báo LAeq của mô hình Vòm Im trong P06 là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "2,9"
+      ],
+      "pass": false,
+      "answer": "I don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "Luật nhắc yên tĩnh trong P06 đạt precision và recall bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "89%",
+        "84%"
+      ],
+      "pass": true,
+      "answer": "Luật nhắc yên tĩnh trong P06 đạt precision 89% và recall 84% (paper_06.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Dải mức ồn LAeq giả lập trong P06 là bao nhiêu dBA?",
+      "answerable": true,
+      "must_contain": [
+        "42",
+        "67"
+      ],
+      "pass": true,
+      "answer": "Dải mức ồn LAeq giả lập trong P06 là từ 42 đến 67 dBA (paper_06.pdf, page 1; paper_06.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Ở ví dụ phòng S04 của P06, LAeq mô phỏng, giá trị dự báo và sai lệch là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "62",
+        "60,6",
+        "1,4"
+      ],
+      "pass": true,
+      "answer": "Ở ví dụ phòng S04 của P06, LAeq mô phỏng là 62 dBA, giá trị dự báo là 60,6 dBA, và sai lệch là 1,4 dBA (paper_06.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Thời gian chờ trung vị trong P07 giảm từ bao nhiêu xuống bao nhiêu và giảm bao nhiêu phần trăm?",
+      "answerable": true,
+      "must_contain": [
+        "9,4",
+        "6,8",
+        "27,7%"
+      ],
+      "pass": true,
+      "answer": "Thời gian chờ trung vị trong P07 giảm từ 9,4 phút xuống còn 6,8 phút, tương đương giảm 27,7% (paper_07.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Phân vị 90 thời gian chờ của tuyến T3 trong P07 thay đổi thế nào?",
+      "answerable": true,
+      "must_contain": [
+        "17,2",
+        "16,5"
+      ],
+      "pass": true,
+      "answer": "Phân vị 90 thời gian chờ của tuyến T3 giảm nhẹ từ 17,2 phút xuống còn 16,5 phút nhờ ràng buộc luôn có ít nhất một xe hoạt động trên tuyến này. Nếu bỏ ràng buộc này, tối ưu toàn mạng có thể bất lợi cho T3 (paper_07.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Biến heat_index_sim trong P07 được tạo từ nguồn nào?",
+      "answerable": true,
+      "must_contain": [
+        "P01"
+      ],
+      "pass": true,
+      "answer": "Biến heat_index_sim trong P07 được xây từ chuỗi hiệu chỉnh của P01 để phân nhóm nhu cầu xe điện (paper_01.pdf, page 2; paper_07.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Trong ví dụ ngày D41 lúc 16:40 của P07, thời gian chờ trung vị của khoảng điều phối là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "6,1"
+      ],
+      "pass": true,
+      "answer": "Thời gian chờ trung vị của khoảng điều phối trong ví dụ ngày D41 lúc 16:40 của P07 là 6,1 phút (paper_07.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Khi bỏ biến nóng trong thử nghiệm phản chứng của P07, trung vị chờ toàn mạng thay đổi bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "0,5"
+      ],
+      "pass": true,
+      "answer": "Khi bỏ biến nóng trong thử nghiệm phản chứng của P07, trung vị chờ toàn mạng tăng 0,5 phút so với lịch điều phối đầy đủ (paper_07.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Luật tăng thông gió trong P08 yêu cầu những điều kiện nào?",
+      "answerable": true,
+      "must_contain": [
+        "1.000",
+        "10 phút",
+        "20"
+      ],
+      "pass": true,
+      "answer": "Luật tăng thông gió trong P08 yêu cầu hai điều kiện đồng thời: CO2 phải vượt 1.000 ppm liên tục trong 10 phút và số người ước lượng trong phòng phải từ 20 trở lên. Chỉ một trong hai điều kiện riêng lẻ không đủ để bật quạt theo chính sách này (paper_08.pdf, page 2; paper_08.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "Tỷ lệ thời gian vượt ngưỡng CO2 trong P08 giảm từ bao nhiêu xuống bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "18%",
+        "9%"
+      ],
+      "pass": true,
+      "answer": "Tỷ lệ thời gian vượt ngưỡng CO2 trong P08 giảm từ 18% xuống 9% (paper_08.pdf, page 1; paper_08.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Năng lượng thông gió trong P08 tăng bao nhiêu phần trăm so với đường cơ sở?",
+      "answerable": true,
+      "must_contain": [
+        "6,2%"
+      ],
+      "pass": true,
+      "answer": "Năng lượng thông gió trong P08 tăng 6,2% so với đường cơ sở (paper_08.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Ở phòng A12 trong P08, CO2, số người ước lượng và CO2 sau 25 phút là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "1.048",
+        "26",
+        "945"
+      ],
+      "pass": true,
+      "answer": "Ở phòng A12 trong P08, CO2 giả lập ở mức 1.048 ppm trong 15 phút và số người ước lượng là 26. Sau 25 phút, mô hình CO2 giảm xuống 945 ppm (paper_08.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Vì sao quạt không tăng cấp ở phòng A04 trong P08 dù CO2 đạt 1.110 ppm?",
+      "answerable": true,
+      "must_contain": [
+        "1.110",
+        "12"
+      ],
+      "pass": true,
+      "answer": "Quạt không tăng cấp ở phòng A04 trong P08 dù CO2 đạt 1.110 ppm vì số người ước lượng chỉ có 12, chưa đạt điều kiện tối thiểu 20 người theo quy tắc kích hoạt; luật yêu cầu đồng thời CO2 > 1.000 ppm liên tục 10 phút và số người ước lượng từ 20 trở lên mới bật quạt (paper_08.pdf, page 2, [P08-R3]).",
+      "reason": ""
+    },
+    {
+      "question": "Trong P09, evidence hit@5 của vector-only và hybrid retrieval là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "71%",
+        "86%"
+      ],
+      "pass": true,
+      "answer": "Evidence hit@5 của vector-only retrieval là 71%, còn của hybrid retrieval là 86% (paper_09.pdf, page 1; paper_09.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Đồ thị tri thức Hạt Mưa KG1 chứa bao nhiêu bộ ba?",
+      "answerable": true,
+      "must_contain": [
+        "3.720"
+      ],
+      "pass": true,
+      "answer": "Đồ thị tri thức Hạt Mưa KG1 lưu 3.720 bộ ba lấy từ tám bài nguồn P01-P08 (paper_09.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "F1 liên kết thực thể của P09 là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "91%"
+      ],
+      "pass": true,
+      "answer": "F1 liên kết thực thể của P09 là 91% (paper_09.pdf, page 1; paper_09.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Bộ kiểm thử 120 câu của P09 được chia thành những loại nào và mỗi loại bao nhiêu câu?",
+      "answerable": true,
+      "must_contain": [
+        "40"
+      ],
+      "pass": true,
+      "answer": "Bộ kiểm thử 120 câu của P09 được chia thành ba loại, mỗi loại 40 câu: 40 câu đơn, 40 câu liên tài liệu, và 40 câu điều kiện (paper_09.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Kể tên một số loại cạnh quan hệ trong đồ thị tri thức của P09.",
+      "answerable": true,
+      "must_contain": [
+        "measured_in",
+        "reported_by"
+      ],
+      "pass": false,
+      "answer": "Một số loại cạnh quan hệ trong đồ thị tri thức của P09 bao gồm quan hệ cảnh báo-nguồn gốc (warning-origin relation).\n\nCăn cứ: [paper_02.pdf, page 2]  \n\"P09 biểu diễn các sự kiện K-AL17 và K-AL22 như quan hệ cảnh báo-nguồn gốc;\"",
+      "reason": "missing keywords: ['measured_in', 'reported_by']"
+    },
+    {
+      "question": "Thời gian phân tích trung vị trong P10 giảm từ bao nhiêu xuống bao nhiêu và giảm bao nhiêu phần trăm?",
+      "answerable": true,
+      "must_contain": [
+        "11",
+        "7",
+        "36,4%"
+      ],
+      "pass": true,
+      "answer": "Thời gian phân tích trung vị trong P10 giảm từ 11 phút xuống 7 phút, tương đương giảm 4 phút hoặc 36,4% (paper_10.pdf, page 2; paper_10.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "Bộ hậu kiểm của P10 phát hiện bao nhiêu xung đột đơn vị hoặc mẫu số?",
+      "answerable": true,
+      "must_contain": [
+        "7"
+      ],
+      "pass": false,
+      "answer": "Bộ hậu kiểm của P10 phát hiện bảy xung đột đơn vị hoặc mẫu số (paper_10.pdf, page 2).",
+      "reason": "missing keywords: ['7']"
+    },
+    {
+      "question": "100 tình huống quy hoạch trong P10 được phân bổ ra sao giữa các nhóm?",
+      "answerable": true,
+      "must_contain": [
+        "30",
+        "25",
+        "20"
+      ],
+      "pass": true,
+      "answer": "100 tình huống quy hoạch trong P10 được phân bổ như sau: 30 tình huống điện-không khí, 25 tình huống di chuyển, 25 tình huống nước-rác, và 20 tình huống chứng cứ (paper_10.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Kịch bản S-028 của P10 hỏi điều gì và hệ thống xử lý thế nào?",
+      "answerable": true,
+      "must_contain": [
+        "18,6",
+        "6,2",
+        "kWh"
+      ],
+      "pass": false,
+      "answer": "I don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "Kịch bản S-071 của P10 yêu cầu ràng buộc gì đối với tuyến T3?",
+      "answerable": true,
+      "must_contain": [
+        "T3",
+        "một xe"
+      ],
+      "pass": true,
+      "answer": "Kịch bản S-071 của P10 yêu cầu tối thiểu một xe trên mọi tuyến, bao gồm tuyến T3 (P07-R2 yêu cầu tối thiểu một xe trên mọi tuyến) (paper_10.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Có thể lấy 18,6% giảm đỉnh của P03 trừ đi 6,2% tăng năng lượng quạt của P08 để ra mức bù trừ ròng không? Vì sao?",
+      "answerable": true,
+      "must_contain": [
+        "công suất",
+        "năng lượng"
+      ],
+      "pass": true,
+      "answer": "Không thể lấy 18,6% giảm đỉnh của P03 trừ đi 6,2% tăng năng lượng quạt của P08 để ra mức bù trừ ròng. Lý do là hệ thống từ chối phép trừ này vì yêu cầu dữ liệu phải cùng đơn vị kWh trong cùng kỳ để so sánh hợp lệ, trong khi 18,6% giảm đỉnh công suất và 6,2% tăng năng lượng quạt không phải cùng loại chỉ số và không được bù trừ trực tiếp (P08-R2, P10-R2, P10-R3).\n\nCụ thể, theo [paper_08.pdf, page 2], \"Năng lượng thông gió tăng 6,2% so với đường cơ sở. Đây là đánh đổi được ghi nhận trong mô hình; không phải tăng 6,2% tổng hóa đơn điện và không được bù trừ trực tiếp với 18,6% giảm đỉnh của P03.\" Và theo [paper_10.pdf, page 2], \"Bộ hậu kiểm phát hiện... hệ thống từ chối phép trừ 18,6 - 6,2 và yêu cầu dữ liệu cùng đơn vị kWh trong cùng kỳ để so sánh hợp lệ.\"\n\nDo đó, phép trừ này không hợp lệ để tính mức bù trừ ròng.",
+      "reason": ""
+    },
+    {
+      "question": "Biến heat_index_sim của P07 được sinh từ bài nào và dựa trên đại lượng gì?",
+      "answerable": true,
+      "must_contain": [
+        "P01",
+        "P07"
+      ],
+      "pass": true,
+      "answer": "Biến heat_index_sim của P07 được sinh từ chuỗi nhiệt độ đã hiệu chỉnh của P01 (paper_07.pdf, page 2; paper_01.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Điều kiện số người trong luật thông gió của P08 lấy từ bài nào và ngưỡng là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "20",
+        "P04"
+      ],
+      "pass": true,
+      "answer": "Điều kiện số người trong luật thông gió của P08 lấy từ bài P04 và ngưỡng là từ 20 người trở lên (paper_08.pdf, page 2; paper_08.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "P06 lấy đầu vào số người từ bài nào của bộ Lyris?",
+      "answerable": true,
+      "must_contain": [
+        "số người",
+        "P04"
+      ],
+      "pass": true,
+      "answer": "P06 lấy đầu vào số người từ bài P04 của bộ Lyris (paper_06.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Trạng thái thông gió ở P08 liên quan thế nào đến mức ồn LAeq ở P06?",
+      "answerable": true,
+      "must_contain": [
+        "cấp quạt",
+        "LAeq"
+      ],
+      "pass": false,
+      "answer": "Trạng thái thông gió ở P08 có ảnh hưởng đến mức ồn LAeq được mô tả trong P06. Cụ thể, P08 cung cấp nhãn trạng thái thông gió có ảnh hưởng đến LAeq, và P09 sử dụng kết quả này để kiểm thử phân biệt giữa “dự báo mức ồn” và “giảm mức ồn” (paper_06.pdf, page 2).",
+      "reason": "missing keywords: ['cấp quạt']"
+    },
+    {
+      "question": "So sánh ba tỷ lệ giảm của P02 (nước cấp), P05 (quãng đường thu gom) và P07 (chờ trung vị).",
+      "answerable": true,
+      "must_contain": [
+        "14,3%",
+        "14%",
+        "27,7%"
+      ],
+      "pass": true,
+      "answer": "Ba tỷ lệ giảm được báo cáo là:  \n- P02 giảm 14,3% nước cấp theo tuần  \n- P05 giảm 14% quãng đường thu gom  \n- P07 giảm 27,7% giảm chờ trung vị  \n\nBa tỷ lệ này không thể cộng thành một “hiệu quả tổng hợp” (paper_10.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "P05 dùng tín hiệu nào từ P04 để dự báo đầy thùng?",
+      "answerable": true,
+      "must_contain": [
+        "P04",
+        "dự báo đầy thùng"
+      ],
+      "pass": true,
+      "answer": "P05 dùng tổng số người theo khu từ P04 làm tín hiệu phụ cho dự báo đầy thùng, không dùng dữ liệu cá nhân (paper_05.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "P02 cung cấp gì cho P05 khi xây lịch thu gom?",
+      "answerable": true,
+      "must_contain": [
+        "B1-B6"
+      ],
+      "pass": true,
+      "answer": "P02 được P05 sử dụng làm mốc hoạt động của tòa B1-B6 khi xây lịch thu gom (paper_02.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Đồ thị tri thức P09 phân biệt chỉ tiêu 18,6% của P03 và 6,2% của P08 bằng những loại nút nào?",
+      "answerable": true,
+      "must_contain": [
+        "peak_grid_power",
+        "fan_energy"
+      ],
+      "pass": false,
+      "answer": "Đồ thị tri thức P09 phân biệt chỉ tiêu 18,6% giảm đỉnh công suất của P03 và 6,2% tăng năng lượng quạt của P08 bằng các điểm neo [P09-R1], [P09-R2], [P09-R3] trong hệ RAG định vị chứng cứ (paper_09.pdf, page 2). Tuy nhiên, loại nút cụ thể trong đồ thị tri thức không được nêu rõ trong các tài liệu được cung cấp.\n\nDo đó, câu trả lời chính xác về \"những loại nút\" dùng để phân biệt hai chỉ tiêu này không có trong tài liệu.\n\nI don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "Trong P02 và P09, cảnh báo K-AL17 và K-AL22 được gán nhãn sự kiện gì?",
+      "answerable": true,
+      "must_contain": [
+        "leak",
+        "normal"
+      ],
+      "pass": true,
+      "answer": "Cảnh báo K-AL17 được gán nhãn là sự kiện \"leak\" (rò rỉ), tức là báo động thật, còn cảnh báo K-AL22 được gán nhãn là sự kiện \"normal\" (bình thường), tức là báo động giả (false alarm) (paper_02.pdf, page 2; paper_09.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Vì sao P10 nói vừa có 'chín bài đối chiếu' vừa có 'tám bài xây KG1' mà cả hai đều đúng?",
+      "answerable": true,
+      "must_contain": [
+        "chín",
+        "tám"
+      ],
+      "pass": true,
+      "answer": "P10 giải thích rằng \"chín bài đối chiếu\" và \"tám bài xây KG1\" đều đúng nhưng thuộc hai phạm vi khác nhau: chín nghiên cứu P01-P09 là nguồn của P10, trong khi đồ thị KG1 trong P09 được xây chỉ từ P01-P08. Do đó, P10 sử dụng chín bài để đối chiếu nhưng chỉ dùng tám bài để xây KG1 (file paper_10.pdf, page 2; paper_09.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Để so sánh hợp lệ GridNest (P03) với năng lượng quạt tăng (P08), P10 yêu cầu dữ liệu gì?",
+      "answerable": true,
+      "must_contain": [
+        "kWh"
+      ],
+      "pass": true,
+      "answer": "Để so sánh hợp lệ GridNest (P03) với năng lượng quạt tăng (P08), P10 yêu cầu dữ liệu cùng đơn vị kWh trong cùng kỳ để so sánh hợp lệ (paper_10.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Ràng buộc công bằng nào của P07 được P10 dùng khi cân nhắc giảm số xe T3?",
+      "answerable": true,
+      "must_contain": [
+        "P07-R2"
+      ],
+      "pass": true,
+      "answer": "Ràng buộc công bằng của P07 được P10 dùng khi cân nhắc giảm số xe T3 là \"tối thiểu một xe trên mọi tuyến\" (P07-R2). P10 ghi nhận rằng kịch bản S-071 hỏi có thể giảm số xe T3 để tăng hiệu suất tuyến T1 hay không, nhưng P07-R2 yêu cầu luôn có ít nhất một xe hoạt động trên mọi tuyến, do đó bảng quyết định đánh dấu ràng buộc công bằng này trước khi đề xuất lịch xe (paper_10.pdf, page 2; paper_07.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "P01 cung cấp biến nào cho P08 và dùng để làm gì?",
+      "answerable": true,
+      "must_contain": [
+        "vùng",
+        "giờ"
+      ],
+      "pass": true,
+      "answer": "P01 cung cấp biến vùng/giờ để phân tầng dữ liệu cho P08.\n\n(P08-R5, paper_08.pdf, page 2)",
+      "reason": ""
+    },
+    {
+      "question": "Mức tăng 6,2% trong P08 tính trên đại lượng nào, có phải tổng hóa đơn điện không?",
+      "answerable": true,
+      "must_contain": [
+        "quạt"
+      ],
+      "pass": true,
+      "answer": "Mức tăng 6,2% trong P08 là mức tăng năng lượng thông gió, không phải tăng 6,2% tổng hóa đơn điện và không được bù trừ trực tiếp với 18,6% giảm đỉnh của P03.\n\nCụ thể: \"Năng lượng thông gió tăng 6,2% so với đường cơ sở. Đây là đánh đổi được ghi nhận trong mô hình; không phải tăng 6,2% tổng hóa đơn điện và không được bù trừ trực tiếp với 18,6% giảm đỉnh của P03.\" (paper_08.pdf, page 2)  \nVà được nhắc lại trong: \"P08 nêu chi phí năng lượng tăng 6,2% do chiến lược thông gió trong thử nghiệm riêng; không được trừ trực tiếp 6,2% khỏi 18,6% giảm đỉnh của P03.\" (paper_03.pdf, page 2)  \nCũng được lưu ý trong: \"Một ví dụ quan trọng là nhầm 18,6% giảm đỉnh công suất ở P03 với 6,2% tăng năng lượng quạt ở P08.\" (paper_10.pdf, page 2)\n\nDo đó, mức tăng 6,2% là trên năng lượng quạt (năng lượng thông gió), không phải tổng hóa đơn điện.",
+      "reason": ""
+    },
+    {
+      "question": "P09 tách biệt khối lượng đầu vào 3.200 kg của P05 với chỉ tiêu nào?",
+      "answerable": true,
+      "must_contain": [
+        "3.200",
+        "tái chế"
+      ],
+      "pass": true,
+      "answer": "P09 tách biệt khối lượng đầu vào 3.200 kg của P05 với chỉ tiêu “tái chế thành công” (paper_05.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "P04 mô phỏng bao nhiêu phòng và P08 mô phỏng bao nhiêu phòng học?",
+      "answerable": true,
+      "must_contain": [
+        "12",
+        "18"
+      ],
+      "pass": true,
+      "answer": "P04 mô phỏng 12 phòng học (L01-L12) (paper_04.pdf, page 1).\n\nP08 mô phỏng 18 phòng học (A01-A18) (paper_08.pdf, page 1).",
+      "reason": ""
+    },
+    {
+      "question": "P06 dùng bao nhiêu không gian, so với số phòng của P04?",
+      "answerable": true,
+      "must_contain": [
+        "8",
+        "12"
+      ],
+      "pass": false,
+      "answer": "I don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "So sánh thời lượng mô phỏng của P01, P02 và P03.",
+      "answerable": true,
+      "must_contain": [
+        "56",
+        "90",
+        "180"
+      ],
+      "pass": false,
+      "answer": "I don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "So sánh precision và recall của cảnh báo rò rỉ P02 với luật nhắc yên tĩnh P06.",
+      "answerable": true,
+      "must_contain": [
+        "85,2%",
+        "92,0%",
+        "89%",
+        "84%"
+      ],
+      "pass": true,
+      "answer": "Precision và recall của cảnh báo rò rỉ trong P02 và luật nhắc yên tĩnh trong P06 được so sánh như sau:\n\n- Cảnh báo rò rỉ (P02):  \n  - Precision: 85,2%  \n  - Recall: 92,0%  \n  (23 cảnh báo đúng trên tổng 27 cảnh báo, 23 sự cố được phát hiện trên 25 sự cố giả lập)  \n  (paper_02.pdf, page 2)\n\n- Luật nhắc yên tĩnh (P06):  \n  - Precision: 89%  \n  - Recall: 84%  \n  (theo nhãn sự kiện tổng hợp trên tập nhãn giả lập)  \n  (paper_06.pdf, page 2)\n\nTóm lại, luật nhắc yên tĩnh có precision cao hơn (89% so với 85,2%) nhưng recall thấp hơn (84% so với 92%) so với cảnh báo rò rỉ.  \n\n(Các trích dẫn: paper_02.pdf, page 2; paper_06.pdf, page 2)",
+      "reason": ""
+    },
+    {
+      "question": "Các mức giảm tính bằng điểm phần trăm của P05, P08 và mức tăng hit@5 của P09 lần lượt là bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "12",
+        "9",
+        "15"
+      ],
+      "pass": false,
+      "answer": "Các mức giảm tính bằng điểm phần trăm của P05, P08 và mức tăng hit@5 của P09 không được nêu rõ trong các tài liệu được cung cấp. \n\nTuy nhiên, có thông tin liên quan như sau:  \n- P05 báo 14% giảm quãng đường thu gom (không rõ có phải điểm phần trăm hay không) (paper_10.pdf, page 2 [P10-Rx]).  \n- P08 báo tăng năng lượng quạt 6,2% (không phải giảm) (paper_08.pdf, page 2 [P08-R2]).  \n- P09 phân biệt 18,6% giảm đỉnh công suất của P03 và 6,2% tăng năng lượng quạt của P08, nhưng không đề cập mức tăng hit@5 (paper_09.pdf, page 2).  \n\nDo đó, mức giảm điểm phần trăm cụ thể của P05, P08 và mức tăng hit@5 của P09 không được cung cấp trong các tài liệu trên.\n\nĐáp án:  \nI don't know based on the provided documents.",
+      "reason": "refused although the answer is in the papers"
+    },
+    {
+      "question": "Biến heat_index_sim của P07 dựa trên chuỗi hiệu chỉnh của P01 có MAE bao nhiêu?",
+      "answerable": true,
+      "must_contain": [
+        "0,42",
+        "P01"
+      ],
+      "pass": true,
+      "answer": "Biến heat_index_sim của P07 dựa trên chuỗi hiệu chỉnh của P01 có MAE giảm từ 0,78 °C xuống còn 0,42 °C trên tập kiểm thử 14 ngày (paper_01.pdf, page 1; paper_01.pdf, page 2; paper_07.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "P10 sử dụng đồ thị nào từ P09 làm lớp truy xuất?",
+      "answerable": true,
+      "must_contain": [
+        "KG1"
+      ],
+      "pass": true,
+      "answer": "P10 sử dụng đồ thị KG1 trong P09 làm lớp truy xuất (paper_10.pdf, page 2).",
+      "reason": ""
+    },
+    {
+      "question": "Khuôn viên Lyris nằm ở tọa độ GPS nào?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Nước tái sử dụng của vòng Kora có an toàn để uống không?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": false,
+      "answer": "Nước tái sử dụng của vòng Kora không được đánh giá là an toàn để uống. Cụ thể, bài báo nêu rõ: \"Bài báo không đánh giá nước an toàn để uống\" (paper_02.pdf, page 1).",
+      "reason": "answered instead of refusing"
+    },
+    {
+      "question": "Hệ GridNest giúp tiết kiệm bao nhiêu tiền điện (VND) mỗi tháng?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Pin của GridNest có tuổi thọ bao nhiêu năm?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Cảm biến thương mại nào có thể thay thế nút Mây Lam ngoài đời thực?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Tác giả thật của bài P01 là ai và làm việc ở trường đại học nào?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": false,
+      "answer": "Tác giả bài P01 không có thật và không thuộc trường đại học nào, vì bài P01 là tài liệu giả lập, 100% nhân tạo, không có tác giả, tổ chức, nghiên cứu hoặc kết quả thực nghiệm ngoài đời đứng sau tài liệu này (paper_01.pdf, page 1).",
+      "reason": "answered instead of refusing"
+    },
+    {
+      "question": "DOI của bài P03 là gì?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": false,
+      "answer": "DOI của bài P03 không được cung cấp trong các tài liệu đã cho.\n\nCăn cứ: [paper_03.pdf, page 3] chỉ ghi \"Không có DOI.\"",
+      "reason": "answered instead of refusing"
+    },
+    {
+      "question": "Nồng độ CO2 1.000 ppm có gây hại cho sức khỏe học sinh không?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": false,
+      "answer": "Nồng độ CO2 1.000 ppm trong tài liệu được sử dụng làm ngưỡng kích hoạt điều khiển quạt, nhưng không đồng nhất với an toàn sức khỏe và không phải là giới hạn pháp lý hay khuyến nghị dành cho mọi phòng học. Các ngưỡng cảnh báo này là quy ước cho bộ dữ liệu giả lập, không phải khuyến nghị y tế hoặc tiêu chuẩn pháp lý. Bài báo cũng không đo hiệu quả học tập, stress hay nguy cơ sức khỏe liên quan đến mức CO2 này (paper_08.pdf, page 1; paper_06.pdf, page 2). \n\nDo đó, không có thông tin trong tài liệu cho thấy nồng độ CO2 1.000 ppm gây hại cho sức khỏe học sinh.",
+      "reason": "answered instead of refusing"
+    },
+    {
+      "question": "Hệ thống đếm Lối Bạc có tuân thủ GDPR không?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": false,
+      "answer": "Dựa trên các tài liệu được cung cấp, không có thông tin rõ ràng về việc hệ thống đếm ẩn danh Lối Bạc có tuân thủ GDPR hay không. Tuy nhiên, trong [paper_04.pdf, page 2] có ghi nhận rằng:\n\n- Khả năng bảo vệ riêng tư chỉ được mô tả ở cấp thiết kế dữ liệu.\n- Không có kiểm định xâm nhập, kiểm toán bảo mật hay đánh giá pháp lý.\n- Do đó không thể xem đây là chứng nhận tuân thủ.\n\nNhư vậy, không có chứng nhận hay xác nhận rõ ràng về việc tuân thủ GDPR.\n\nCăn cứ: (paper_04.pdf, page 2)",
+      "reason": "answered instead of refusing"
+    },
+    {
+      "question": "Dịch vụ xe điện Đường Rêu giảm được bao nhiêu kg CO2 phát thải?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Chi phí nhiên liệu cho các tuyến thu gom của Nhịp Tái là bao nhiêu?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Bài P11 của tuyển tập Lyris nói về chủ đề gì?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Tỷ lệ tái chế thành công cuối cùng của vật liệu Nhịp Tái là bao nhiêu?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Mức ồn 67 dBA có gây tổn hại thính lực không?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Recall của cảnh báo phòng đông trong P04 là bao nhiêu?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "P04 phát ra tổng cộng bao nhiêu cảnh báo đông?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Năng lượng làm lạnh và điều hòa độ ẩm tăng bao nhiêu trong thử nghiệm Lá Sáng?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Sau 10 năm vận hành, pin GridNest bị suy giảm dung lượng bao nhiêu phần trăm?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Bảng nhầm lẫn gốc của luật nhắc yên tĩnh P06 có bao nhiêu sự kiện dương tính thật?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Giá điện bán lẻ hiện nay ở Việt Nam là bao nhiêu mỗi kWh?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    },
+    {
+      "question": "Có bằng chứng thực tế nào cho thấy cây xanh ở G02 làm giảm nhiệt độ so với G01 không?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": false,
+      "answer": "Không có bằng chứng thực tế cho thấy cây xanh ở G02 làm giảm nhiệt độ so với G01. Chênh lệch nhiệt độ đỉnh giữa G01 và G02 là kết quả của kịch bản mô phỏng và không phải là hiệu ứng thực tế của cây xanh (paper_01.pdf, page 2, [P01-R2], [P01-R3]). Cụ thể, tài liệu nêu rõ: \"Chênh lệch G01-G02 là tương quan trong kịch bản, không chứng minh cây xanh gây giảm nhiệt\" (paper_01.pdf, page 2).",
+      "reason": "answered instead of refusing"
+    },
+    {
+      "question": "Hệ RAG Hạt Mưa đạt kết quả thế nào so với ChatGPT hoặc các sản phẩm RAG thương mại ngoài đời?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": false,
+      "answer": "Hệ RAG Hạt Mưa là một benchmark nhân tạo và không phải kết quả sản phẩm RAG ngoài đời thực. Các kết quả chỉ xác thực nội bộ trong vũ trụ dữ liệu Lyris và không thay thế nghiên cứu hoặc số liệu thực địa. Do đó, không có so sánh trực tiếp với ChatGPT hoặc các sản phẩm RAG thương mại ngoài đời trong tài liệu này.\n\nCụ thể, tài liệu ghi rõ: \"Đây là benchmark nhân tạo, không phải kết quả sản phẩm RAG ngoài đời\" và \"Các kết quả chỉ xác thực nội bộ trong vũ trụ dữ liệu Lyris, không thay thế nghiên cứu hoặc số liệu thực địa\" (paper_09.pdf, pages 1-2). \n\nVì vậy, không có thông tin về hiệu quả so sánh giữa hệ RAG Hạt Mưa với ChatGPT hoặc các sản phẩm RAG thương mại ngoài đời.\n\nTrích dẫn: (paper_09.pdf, pages 1-2)",
+      "reason": "answered instead of refusing"
+    },
+    {
+      "question": "Hôm nay thời tiết ở Đà Nẵng thế nào?",
+      "answerable": false,
+      "must_contain": [],
+      "pass": true,
+      "answer": "I don't know based on the provided documents.",
+      "reason": ""
+    }
+  ]
+}

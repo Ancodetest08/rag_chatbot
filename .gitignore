@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Generated vector index (rebuilt automatically on first run)
+faiss_index/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,707 @@
+[
+  {
+    "question": "Trong P01, mạng cảm biến Mây Lam có bao nhiêu nút và được chia thành các vùng nào?",
+    "answerable": true,
+    "must_contain": [
+      "24",
+      "G01",
+      "G04"
+    ]
+  },
+  {
+    "question": "Lịch đo lý thuyết của bộ dữ liệu LYR-MAYLAM-56D có bao nhiêu bản ghi?",
+    "answerable": true,
+    "must_contain": [
+      "193.536"
+    ]
+  },
+  {
+    "question": "Sau khi lọc, P01 còn bao nhiêu bản ghi hợp lệ và tỷ lệ hợp lệ là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "184.246",
+      "95,20%"
+    ]
+  },
+  {
+    "question": "MAE nhiệt độ trong P01 giảm từ bao nhiêu xuống bao nhiêu trên tập kiểm thử 14 ngày?",
+    "answerable": true,
+    "must_contain": [
+      "0,78",
+      "0,42"
+    ]
+  },
+  {
+    "question": "Phân vị thứ 90 của sai số tuyệt đối trong P01 thay đổi thế nào giữa đường cơ sở và kịch bản mới?",
+    "answerable": true,
+    "must_contain": [
+      "1,54",
+      "0,91"
+    ]
+  },
+  {
+    "question": "Trong một ngày nắng giả định của P01, đỉnh nhiệt độ ở G01 cao hơn G02 bao nhiêu độ?",
+    "answerable": true,
+    "must_contain": [
+      "2,1"
+    ]
+  },
+  {
+    "question": "Lỗi kiểm tra được cài vào nút ML17 trong P01 là gì?",
+    "answerable": true,
+    "must_contain": [
+      "ML17",
+      "11",
+      "29,0"
+    ]
+  },
+  {
+    "question": "Ở ví dụ ML03 lúc 13:20 ngày 39 của P01, nhiệt độ ghi nhận, nhiệt độ tham chiếu và nhiệt độ mô hình ước lượng là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "34,7",
+      "33,8",
+      "33,9"
+    ]
+  },
+  {
+    "question": "Trong P02, bộ phát hiện bất thường phát ra bao nhiêu cảnh báo, bao nhiêu đúng và bao nhiêu sai?",
+    "answerable": true,
+    "must_contain": [
+      "27",
+      "23",
+      "4"
+    ]
+  },
+  {
+    "question": "Precision và recall của cảnh báo rò rỉ trong P02 là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "85,2%",
+      "92,0%"
+    ]
+  },
+  {
+    "question": "Lượng nước cấp mỗi tuần trong P02 thay đổi thế nào giữa kịch bản đối chứng và kịch bản có điều tiết?",
+    "answerable": true,
+    "must_contain": [
+      "420",
+      "360",
+      "14,3%"
+    ]
+  },
+  {
+    "question": "Dòng tái sử dụng trong P02 đáp ứng bao nhiêu phần trăm nhu cầu nước không dùng để uống?",
+    "answerable": true,
+    "must_contain": [
+      "22%"
+    ]
+  },
+  {
+    "question": "Cảnh báo K-AL17 trong P02 xảy ra ở nhánh nào, phát lúc mấy giờ và chậm bao lâu so với lúc rò rỉ bắt đầu?",
+    "answerable": true,
+    "must_contain": [
+      "K-AL17",
+      "B4",
+      "02:30",
+      "15 phút"
+    ]
+  },
+  {
+    "question": "Hai sự cố rò rỉ không được phát hiện trong P02 xảy ra ở nhánh nào?",
+    "answerable": true,
+    "must_contain": [
+      "B6"
+    ]
+  },
+  {
+    "question": "Trong P03, lịch điều phối GridNest giảm đỉnh công suất mua từ lưới bao nhiêu phần trăm?",
+    "answerable": true,
+    "must_contain": [
+      "18,6%"
+    ]
+  },
+  {
+    "question": "Tỷ lệ điện mặt trời tự dùng trong P03 tăng từ bao nhiêu lên bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "76%",
+      "88%"
+    ]
+  },
+  {
+    "question": "Tổn hao chu kỳ nạp-xả của pin trong P03 chiếm bao nhiêu phần trăm?",
+    "answerable": true,
+    "must_contain": [
+      "7,1%"
+    ]
+  },
+  {
+    "question": "Công suất đỉnh của mảng điện mặt trời và dung lượng danh định của pin GridNest là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "120 kWp",
+      "240 kWh"
+    ]
+  },
+  {
+    "question": "Khoảng trạng thái sạc (SOC) cho phép của pin trong P03 là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "15",
+      "90"
+    ]
+  },
+  {
+    "question": "Trong ngày mô phỏng D117 của P03, công suất mua lưới đỉnh khi chưa điều phối và khi dùng GridNest là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "312",
+      "254"
+    ]
+  },
+  {
+    "question": "Trong P04, MAE số người mỗi phòng của đường cơ sở và của phương pháp Lối Bạc là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "8,1",
+      "4,8"
+    ]
+  },
+  {
+    "question": "Cảnh báo đông trong P04 có precision bao nhiêu, với ngưỡng nào và tầm nhìn dự báo bao lâu?",
+    "answerable": true,
+    "must_contain": [
+      "82%",
+      "75%",
+      "20 phút"
+    ]
+  },
+  {
+    "question": "Ở ví dụ phòng L07 của P04, mô hình dự đoán bao nhiêu người và đó là bao nhiêu phần trăm sức chứa?",
+    "answerable": true,
+    "must_contain": [
+      "33",
+      "82,5%"
+    ]
+  },
+  {
+    "question": "Có bao nhiêu ô phòng-thời gian trong P04 trước khi áp dụng cờ vắng dữ liệu?",
+    "answerable": true,
+    "must_contain": [
+      "34.560"
+    ]
+  },
+  {
+    "question": "Trường dữ liệu camera_frame trong P04 có tồn tại không?",
+    "answerable": true,
+    "must_contain": [
+      "camera_frame"
+    ]
+  },
+  {
+    "question": "Trong P05, tỷ lệ lẫn tạp chất giảm từ bao nhiêu xuống bao nhiêu và đó là giảm bao nhiêu điểm phần trăm?",
+    "answerable": true,
+    "must_contain": [
+      "28%",
+      "16%",
+      "12 điểm"
+    ]
+  },
+  {
+    "question": "Mức giảm tương đối của tỷ lệ lẫn tạp chất trong P05 là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "42,9%"
+    ]
+  },
+  {
+    "question": "Việc dự báo mức đầy thùng giúp giảm bao nhiêu phần trăm quãng đường thu gom hằng tuần trong P05?",
+    "answerable": true,
+    "must_contain": [
+      "14%"
+    ]
+  },
+  {
+    "question": "Tổng khối lượng vật liệu mô phỏng trong P05 là bao nhiêu và kéo dài bao lâu?",
+    "answerable": true,
+    "must_contain": [
+      "3.200",
+      "12 tuần"
+    ]
+  },
+  {
+    "question": "Trong ví dụ điểm W3 của P05, lịch điều chỉnh bỏ chuyến ở mức đầy dự báo nào và giữ chuyến ở mức nào?",
+    "answerable": true,
+    "must_contain": [
+      "34%",
+      "79%"
+    ]
+  },
+  {
+    "question": "MAE dự báo LAeq của mô hình Vòm Im trong P06 là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "2,9"
+    ]
+  },
+  {
+    "question": "Luật nhắc yên tĩnh trong P06 đạt precision và recall bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "89%",
+      "84%"
+    ]
+  },
+  {
+    "question": "Dải mức ồn LAeq giả lập trong P06 là bao nhiêu dBA?",
+    "answerable": true,
+    "must_contain": [
+      "42",
+      "67"
+    ]
+  },
+  {
+    "question": "Ở ví dụ phòng S04 của P06, LAeq mô phỏng, giá trị dự báo và sai lệch là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "62",
+      "60,6",
+      "1,4"
+    ]
+  },
+  {
+    "question": "Thời gian chờ trung vị trong P07 giảm từ bao nhiêu xuống bao nhiêu và giảm bao nhiêu phần trăm?",
+    "answerable": true,
+    "must_contain": [
+      "9,4",
+      "6,8",
+      "27,7%"
+    ]
+  },
+  {
+    "question": "Phân vị 90 thời gian chờ của tuyến T3 trong P07 thay đổi thế nào?",
+    "answerable": true,
+    "must_contain": [
+      "17,2",
+      "16,5"
+    ]
+  },
+  {
+    "question": "Biến heat_index_sim trong P07 được tạo từ nguồn nào?",
+    "answerable": true,
+    "must_contain": [
+      "P01"
+    ]
+  },
+  {
+    "question": "Trong ví dụ ngày D41 lúc 16:40 của P07, thời gian chờ trung vị của khoảng điều phối là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "6,1"
+    ]
+  },
+  {
+    "question": "Khi bỏ biến nóng trong thử nghiệm phản chứng của P07, trung vị chờ toàn mạng thay đổi bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "0,5"
+    ]
+  },
+  {
+    "question": "Luật tăng thông gió trong P08 yêu cầu những điều kiện nào?",
+    "answerable": true,
+    "must_contain": [
+      "1.000",
+      "10 phút",
+      "20"
+    ]
+  },
+  {
+    "question": "Tỷ lệ thời gian vượt ngưỡng CO2 trong P08 giảm từ bao nhiêu xuống bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "18%",
+      "9%"
+    ]
+  },
+  {
+    "question": "Năng lượng thông gió trong P08 tăng bao nhiêu phần trăm so với đường cơ sở?",
+    "answerable": true,
+    "must_contain": [
+      "6,2%"
+    ]
+  },
+  {
+    "question": "Ở phòng A12 trong P08, CO2, số người ước lượng và CO2 sau 25 phút là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "1.048",
+      "26",
+      "945"
+    ]
+  },
+  {
+    "question": "Vì sao quạt không tăng cấp ở phòng A04 trong P08 dù CO2 đạt 1.110 ppm?",
+    "answerable": true,
+    "must_contain": [
+      "1.110",
+      "12"
+    ]
+  },
+  {
+    "question": "Trong P09, evidence hit@5 của vector-only và hybrid retrieval là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "71%",
+      "86%"
+    ]
+  },
+  {
+    "question": "Đồ thị tri thức Hạt Mưa KG1 chứa bao nhiêu bộ ba?",
+    "answerable": true,
+    "must_contain": [
+      "3.720"
+    ]
+  },
+  {
+    "question": "F1 liên kết thực thể của P09 là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "91%"
+    ]
+  },
+  {
+    "question": "Bộ kiểm thử 120 câu của P09 được chia thành những loại nào và mỗi loại bao nhiêu câu?",
+    "answerable": true,
+    "must_contain": [
+      "40"
+    ]
+  },
+  {
+    "question": "Kể tên một số loại cạnh quan hệ trong đồ thị tri thức của P09.",
+    "answerable": true,
+    "must_contain": [
+      "measured_in",
+      "reported_by"
+    ]
+  },
+  {
+    "question": "Thời gian phân tích trung vị trong P10 giảm từ bao nhiêu xuống bao nhiêu và giảm bao nhiêu phần trăm?",
+    "answerable": true,
+    "must_contain": [
+      "11",
+      "7",
+      "36,4%"
+    ]
+  },
+  {
+    "question": "Bộ hậu kiểm của P10 phát hiện bao nhiêu xung đột đơn vị hoặc mẫu số?",
+    "answerable": true,
+    "must_contain": [
+      "7"
+    ]
+  },
+  {
+    "question": "100 tình huống quy hoạch trong P10 được phân bổ ra sao giữa các nhóm?",
+    "answerable": true,
+    "must_contain": [
+      "30",
+      "25",
+      "20"
+    ]
+  },
+  {
+    "question": "Kịch bản S-028 của P10 hỏi điều gì và hệ thống xử lý thế nào?",
+    "answerable": true,
+    "must_contain": [
+      "18,6",
+      "6,2",
+      "kWh"
+    ]
+  },
+  {
+    "question": "Kịch bản S-071 của P10 yêu cầu ràng buộc gì đối với tuyến T3?",
+    "answerable": true,
+    "must_contain": [
+      "T3",
+      "một xe"
+    ]
+  },
+  {
+    "question": "Có thể lấy 18,6% giảm đỉnh của P03 trừ đi 6,2% tăng năng lượng quạt của P08 để ra mức bù trừ ròng không? Vì sao?",
+    "answerable": true,
+    "must_contain": [
+      "công suất",
+      "năng lượng"
+    ]
+  },
+  {
+    "question": "Biến heat_index_sim của P07 được sinh từ bài nào và dựa trên đại lượng gì?",
+    "answerable": true,
+    "must_contain": [
+      "P01",
+      "P07"
+    ]
+  },
+  {
+    "question": "Điều kiện số người trong luật thông gió của P08 lấy từ bài nào và ngưỡng là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "20",
+      "P04"
+    ]
+  },
+  {
+    "question": "P06 lấy đầu vào số người từ bài nào của bộ Lyris?",
+    "answerable": true,
+    "must_contain": [
+      "số người",
+      "P04"
+    ]
+  },
+  {
+    "question": "Trạng thái thông gió ở P08 liên quan thế nào đến mức ồn LAeq ở P06?",
+    "answerable": true,
+    "must_contain": [
+      "cấp quạt",
+      "LAeq"
+    ]
+  },
+  {
+    "question": "So sánh ba tỷ lệ giảm của P02 (nước cấp), P05 (quãng đường thu gom) và P07 (chờ trung vị).",
+    "answerable": true,
+    "must_contain": [
+      "14,3%",
+      "14%",
+      "27,7%"
+    ]
+  },
+  {
+    "question": "P05 dùng tín hiệu nào từ P04 để dự báo đầy thùng?",
+    "answerable": true,
+    "must_contain": [
+      "P04",
+      "dự báo đầy thùng"
+    ]
+  },
+  {
+    "question": "P02 cung cấp gì cho P05 khi xây lịch thu gom?",
+    "answerable": true,
+    "must_contain": [
+      "B1-B6"
+    ]
+  },
+  {
+    "question": "Đồ thị tri thức P09 phân biệt chỉ tiêu 18,6% của P03 và 6,2% của P08 bằng những loại nút nào?",
+    "answerable": true,
+    "must_contain": [
+      "peak_grid_power",
+      "fan_energy"
+    ]
+  },
+  {
+    "question": "Trong P02 và P09, cảnh báo K-AL17 và K-AL22 được gán nhãn sự kiện gì?",
+    "answerable": true,
+    "must_contain": [
+      "leak",
+      "normal"
+    ]
+  },
+  {
+    "question": "Vì sao P10 nói vừa có 'chín bài đối chiếu' vừa có 'tám bài xây KG1' mà cả hai đều đúng?",
+    "answerable": true,
+    "must_contain": [
+      "chín",
+      "tám"
+    ]
+  },
+  {
+    "question": "Để so sánh hợp lệ GridNest (P03) với năng lượng quạt tăng (P08), P10 yêu cầu dữ liệu gì?",
+    "answerable": true,
+    "must_contain": [
+      "kWh"
+    ]
+  },
+  {
+    "question": "Ràng buộc công bằng nào của P07 được P10 dùng khi cân nhắc giảm số xe T3?",
+    "answerable": true,
+    "must_contain": [
+      "P07-R2"
+    ]
+  },
+  {
+    "question": "P01 cung cấp biến nào cho P08 và dùng để làm gì?",
+    "answerable": true,
+    "must_contain": [
+      "vùng",
+      "giờ"
+    ]
+  },
+  {
+    "question": "Mức tăng 6,2% trong P08 tính trên đại lượng nào, có phải tổng hóa đơn điện không?",
+    "answerable": true,
+    "must_contain": [
+      "quạt"
+    ]
+  },
+  {
+    "question": "P09 tách biệt khối lượng đầu vào 3.200 kg của P05 với chỉ tiêu nào?",
+    "answerable": true,
+    "must_contain": [
+      "3.200",
+      "tái chế"
+    ]
+  },
+  {
+    "question": "P04 mô phỏng bao nhiêu phòng và P08 mô phỏng bao nhiêu phòng học?",
+    "answerable": true,
+    "must_contain": [
+      "12",
+      "18"
+    ]
+  },
+  {
+    "question": "P06 dùng bao nhiêu không gian, so với số phòng của P04?",
+    "answerable": true,
+    "must_contain": [
+      "8",
+      "12"
+    ]
+  },
+  {
+    "question": "So sánh thời lượng mô phỏng của P01, P02 và P03.",
+    "answerable": true,
+    "must_contain": [
+      "56",
+      "90",
+      "180"
+    ]
+  },
+  {
+    "question": "So sánh precision và recall của cảnh báo rò rỉ P02 với luật nhắc yên tĩnh P06.",
+    "answerable": true,
+    "must_contain": [
+      "85,2%",
+      "92,0%",
+      "89%",
+      "84%"
+    ]
+  },
+  {
+    "question": "Các mức giảm tính bằng điểm phần trăm của P05, P08 và mức tăng hit@5 của P09 lần lượt là bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "12",
+      "9",
+      "15"
+    ]
+  },
+  {
+    "question": "Biến heat_index_sim của P07 dựa trên chuỗi hiệu chỉnh của P01 có MAE bao nhiêu?",
+    "answerable": true,
+    "must_contain": [
+      "0,42",
+      "P01"
+    ]
+  },
+  {
+    "question": "P10 sử dụng đồ thị nào từ P09 làm lớp truy xuất?",
+    "answerable": true,
+    "must_contain": [
+      "KG1"
+    ]
+  },
+  {
+    "question": "Khuôn viên Lyris nằm ở tọa độ GPS nào?",
+    "answerable": false
+  },
+  {
+    "question": "Nước tái sử dụng của vòng Kora có an toàn để uống không?",
+    "answerable": false
+  },
+  {
+    "question": "Hệ GridNest giúp tiết kiệm bao nhiêu tiền điện (VND) mỗi tháng?",
+    "answerable": false
+  },
+  {
+    "question": "Pin của GridNest có tuổi thọ bao nhiêu năm?",
+    "answerable": false
+  },
+  {
+    "question": "Cảm biến thương mại nào có thể thay thế nút Mây Lam ngoài đời thực?",
+    "answerable": false
+  },
+  {
+    "question": "Tác giả thật của bài P01 là ai và làm việc ở trường đại học nào?",
+    "answerable": false
+  },
+  {
+    "question": "DOI của bài P03 là gì?",
+    "answerable": false
+  },
+  {
+    "question": "Nồng độ CO2 1.000 ppm có gây hại cho sức khỏe học sinh không?",
+    "answerable": false
+  },
+  {
+    "question": "Hệ thống đếm Lối Bạc có tuân thủ GDPR không?",
+    "answerable": false
+  },
+  {
+    "question": "Dịch vụ xe điện Đường Rêu giảm được bao nhiêu kg CO2 phát thải?",
+    "answerable": false
+  },
+  {
+    "question": "Chi phí nhiên liệu cho các tuyến thu gom của Nhịp Tái là bao nhiêu?",
+    "answerable": false
+  },
+  {
+    "question": "Bài P11 của tuyển tập Lyris nói về chủ đề gì?",
+    "answerable": false
+  },
+  {
+    "question": "Tỷ lệ tái chế thành công cuối cùng của vật liệu Nhịp Tái là bao nhiêu?",
+    "answerable": false
+  },
+  {
+    "question": "Mức ồn 67 dBA có gây tổn hại thính lực không?",
+    "answerable": false
+  },
+  {
+    "question": "Recall của cảnh báo phòng đông trong P04 là bao nhiêu?",
+    "answerable": false
+  },
+  {
+    "question": "P04 phát ra tổng cộng bao nhiêu cảnh báo đông?",
+    "answerable": false
+  },
+  {
+    "question": "Năng lượng làm lạnh và điều hòa độ ẩm tăng bao nhiêu trong thử nghiệm Lá Sáng?",
+    "answerable": false
+  },
+  {
+    "question": "Sau 10 năm vận hành, pin GridNest bị suy giảm dung lượng bao nhiêu phần trăm?",
+    "answerable": false
+  },
+  {
+    "question": "Bảng nhầm lẫn gốc của luật nhắc yên tĩnh P06 có bao nhiêu sự kiện dương tính thật?",
+    "answerable": false
+  },
+  {
+    "question": "Giá điện bán lẻ hiện nay ở Việt Nam là bao nhiêu mỗi kWh?",
+    "answerable": false
+  },
+  {
+    "question": "Có bằng chứng thực tế nào cho thấy cây xanh ở G02 làm giảm nhiệt độ so với G01 không?",
+    "answerable": false
+  },
+  {
+    "question": "Hệ RAG Hạt Mưa đạt kết quả thế nào so với ChatGPT hoặc các sản phẩm RAG thương mại ngoài đời?",
+    "answerable": false
+  },
+  {
+    "question": "Hôm nay thời tiết ở Đà Nẵng thế nào?",
+    "answerable": false
+  }
+]
